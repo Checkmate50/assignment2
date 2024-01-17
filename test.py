@@ -15,8 +15,10 @@ def test_sum_evens():
     Ruturns the number of tests failed while testing sum_evens
     """
     failures = 0
-    result = loops.sum_evens([1, 2, 3, 4])
+    result = loops.sum_evens([1, 4, 3, 4])
     expected = 8
+    result = loops.sum_evens([-1, -2, 3, 4])
+    expected = 2
     failures += assert_equals(expected, result)
 
     return failures
