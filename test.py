@@ -16,7 +16,7 @@ def test_sum_evens():
     """
     failures = 0
     result = loops.sum_evens([1, 2, 3, 4])
-    expected = 8
+    expected = 6
     failures += assert_equals(expected, result)
 
     return failures
